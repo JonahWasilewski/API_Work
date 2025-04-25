@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SpaceX Launch Finder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Bootstrap CSS for styling -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+      padding: 2rem;
+    }
+    .launch-card {
+      max-width: 600px;
+      margin: 2rem auto;
+      border-radius: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container text-center">
+    <h1 class="mb-4">🚀 SpaceX Launch Finder</h1>
+
+    <div class="input-group mb-3 justify-content-center">
+      <input id="launchNum" type="number" class="form-control w-50" placeholder="Enter launch number…" />
+      <button onclick="getLaunches()" class="btn btn-primary">Search Launches</button>
+    </div>
+
+    <div id="launches"></div>
+  </div>
+
+  <!-- Bootstrap Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Your JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
