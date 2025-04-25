@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GitHub User Search</title>
+  <style>
+    body { font-family: Arial; padding: 2rem; }
+    #profile { margin-top: 1rem; }
+  </style>
+</head>
+<body>
+  <h1>GitHub User Search</h1>
+  <input type="text" id="username" placeholder="Enter GitHub username" />
+  <button onclick="searchUser()">Search User</button>
+  <button id="searchRepoButton" onclick="searchRepo()" style="display:none">Search Repos</button>
+  <div id="profile"></div>
+
+  <div id="repos"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
